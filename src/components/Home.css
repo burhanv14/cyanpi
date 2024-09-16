@@ -42,6 +42,12 @@ body {
   margin-top: 0;
 }
 
+.respred{
+  color: white;
+  font-size: larger;
+  flex: auto;
+  
+}
 
 /* Input and Form Fields */
 input[type="text"],
@@ -124,3 +130,4 @@ select option {
     margin: 0 auto;
   }
 }
+
