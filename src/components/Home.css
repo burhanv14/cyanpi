@@ -1,62 +1,69 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: Times New Roman;
   background-color: black;
-  background-image: url('https://example.com/stars-background.jpg'); /* Use an appropriate starry background image */
+
   background-size: cover;
   background-attachment: fixed;
-  color: white;
+ 
+  overflow : hidden;
 }
 
+/* Overall container */
 .home-container {
   display: flex;
-  justify-content: space-between; /* Distributes space between children */
-  align-items: center; /* Centers items vertically */
-  height: 100vh;
-  padding: 0 10px; /* Optional padding to avoid elements touching the viewport edges */
+  justify-content: space-between; /* Ensures form and image are on opposite sides */
+  align-items: center; /* Vertically centers the form and image */
+  height: 100vh; /* Full height of the viewport */
+  padding: 0px; /* Optional padding for spacing */
+  overflow-y: auto; /* Allows scrolling if the content overflows */
+  padding-top: 0;
+  margin-top: 0;
 }
 
+/* Form container */
 .note {
-  background-color: rgba(128, 128, 128, 0.7); /* Light grey background with transparency */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
   border-radius: 10px;
-  padding: 10 px;
-  width: 350px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  max-height: 450px; /* Adjust the height as needed */
-  overflow-y: auto; /* Allows scrolling if content overflows */
-  padding-bottom: 30px;
+  padding: 0px;
+  width: 100%;
+  max-width: 350px; /* Limit the width of the form */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  margin-left: 10px; /* Margin from the left edge */
+  overflow-y: auto; /* Ensure form doesn't overflow */
 }
-
-
 .form-container {
   display: flex;
   flex-direction: column;
   color: black;
-  font-size: 10px;
+  font-size: 16px;
+  margin-top: 0;
+  
 }
 
+
+/* Input and Form Fields */
 input[type="text"],
 input[type="number"],
 select,
 input[type="date"],
 input[type="submit"] {
-  margin: 10px 0;
-  padding: 10px;
+  margin: 5px 0;
+  padding: 1px;
   border-radius: 5px;
   border: none;
   font-size: 16px;
   width: 100%;
-  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+
 }
 
 input[type="text"],
 input[type="number"],
 select,
 input[type="date"] {
-  background: rgba(0, 0, 0, 0.5); /* Darker semi-transparent background for form fields */
+  background: rgba(0, 0, 0, 0.5); /* Darker semi-transparent background */
   color: white;
 }
 
@@ -91,12 +98,29 @@ select option {
   color: black;
 }
 
+/* Image styling */
 .logo {
-  height: 25vh; /* Adjust the height as needed */
-  margin-right: 40px; /* Margin from the right edge */
-  margin-top: 0px;
-
+  height: 150px; /* Adjust the size as needed */
+  margin-right: 20px; /* Margin from the right edge */
+  object-fit: cover; /* Ensures image keeps aspect ratio */
 }
 
+/* Ensuring responsiveness for smaller screens */
+@media screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column; /* Stack form and image vertically on smaller screens */
+    justify-content: center; /* Center the form and image vertically */
+    padding: 10px;
+  }
 
+  .logo {
+    margin-top: 20px;
+    margin-right: 0;
+    width: 100%;
+    height: auto; /* Adjust height for smaller screens */
+  }
 
+  .note {
+    margin: 0 auto;
+  }
+}
