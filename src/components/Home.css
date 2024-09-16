@@ -32,6 +32,7 @@ body {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   margin-left: 10px; /* Margin from the left edge */
   overflow-y: auto; /* Ensure form doesn't overflow */
+  max-height: 600px;
 }
 .form-container {
   display: flex;
@@ -39,7 +40,6 @@ body {
   color: black;
   font-size: 16px;
   margin-top: 0;
-  
 }
 
 
@@ -50,7 +50,7 @@ select,
 input[type="date"],
 input[type="submit"] {
   margin: 5px 0;
-  padding: 1px;
+  padding: 5px;
   border-radius: 5px;
   border: none;
   font-size: 16px;
