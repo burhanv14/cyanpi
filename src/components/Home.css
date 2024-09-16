@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Times New Roman;
+  background-color: black;
+  background-image: url('https://example.com/stars-background.jpg'); /* Use an appropriate starry background image */
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between; /* Distributes space between children */
+  align-items: center; /* Centers items vertically */
+  height: 100vh;
+  padding: 0 10px; /* Optional padding to avoid elements touching the viewport edges */
+}
+
+.note {
+  background-color: rgba(128, 128, 128, 0.7); /* Light grey background with transparency */
+  border-radius: 10px;
+  padding: 10 px;
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-height: 450px; /* Adjust the height as needed */
+  overflow-y: auto; /* Allows scrolling if content overflows */
+  padding-bottom: 30px;
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-size: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+input[type="date"],
+input[type="submit"] {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+input[type="date"] {
+  background: rgba(0, 0, 0, 0.5); /* Darker semi-transparent background for form fields */
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input::placeholder,
+select::placeholder {
+  color: white;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 150, 255, 0.5);
+}
+
+label {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+select option {
+  color: black;
+}
+
+.logo {
+  height: 25vh; /* Adjust the height as needed */
+  margin-right: 40px; /* Margin from the right edge */
+  margin-top: 0px;
+
+}
+
+
+

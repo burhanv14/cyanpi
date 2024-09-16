@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family:'Times New Roman', Times, serif;
+}
+body {
+  background: #eee;
+  padding: 0 16px;
+}
+.background-gif {
+  background-image: url("https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=600"); /* For public directory */
+  background-size: cover; /* To cover the entire element */
+  background-position: center; /* To center the GIF */
+  background-repeat: no-repeat; /* Prevent repeating the GIF */
+  height: 100vh; /* Adjust as needed */
+  width: 100%; /* Adjust as needed */
+}
+
+/* header {
+
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+} */
+
+header h1 {
+  color: #fff;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  height: 100%; /* Ensure the body and html take up full height */
+  margin: 100px; /* Remove default margin */
+  display: flex;
+  justify-content: center; /* Horizontally center the note */
+  align-items: center; /* Vertically center the note */
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.form-container {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  width: 240px;
+  height: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  justify-content: space-between; /* Equal spacing between items */
+  align-items: center; /* Center the items horizontally inside the box */
+  text-align: center; /* Center the text within each item */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Sans", sans-serif;
+}
+body {
+  background: #eee;
+  padding: 0 16px;
+}
+
+
+
+header h1 {
+  color: #fff;
+  font-family: "Montserrat", cursive;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #000; /* Black background for space effect */
+  color: #000000; /* White text color */
+  background-image: url('https://www.publicdomainpictures.net/pictures/270000/velka/astronomical-space-background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.note {
+  background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+  width: 300px;
+  margin: 10px; /* Add some space from the top and left */
+}
+
+.form-container {
+  display: flex;
+  flex-direction:row-reverse;
+}
+
+.label {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000; /* Golden color for labels */
+}
+
+.input-field,
+.select-field {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ffdf00; /* Gold border for a futuristic feel */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.input-field:focus,
+.select-field:focus {
+  border: 2px solid #ff5722; /* Glowing orange on focus */
+}
+
+.select-field {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #000000; /* Orange button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #050201; /* Lighter orange on hover */
+}
+
+.submit-button:active {
+  background-color: #d94a2e; /* Darker orange on click */
+}
+
+
